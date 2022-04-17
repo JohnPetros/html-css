@@ -67,15 +67,27 @@ section {
 .imagem {
     background-color: rgb(50, 50, 50);
     color: white;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.449);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
 .imagem p {
     display: inline-block;
     padding: 5px;
-    background-color: rgb(45, 41, 41);
+    background-color: rgba(0, 0, 0, 0.621);
+    text-shadow: 1px 1px 0 black;
 }
 
+#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+#img02 {
+    background-image: url(../imagens/background002.jpg);
+}
 
 footer {
     background-color: black;
