@@ -1,0 +1,58 @@
+/* body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+}
+
+div.content {
+    background-color: red;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+
+     content: width (largura) e (altura) height 
+    width: 500px;
+    height: 500px;
+
+    padding: preenchimento 
+    padding: 100px;
+
+     border: borda 
+    border-left: 10px dotted rgba(255, 255, 255, 0.884);
+
+     margin: margem 
+
+    margin: 0 0 20px;
+    
+
+     mudar os limites da caixa 
+    box-sizing: border-box;
+} */
+
+/* section {
+    background-color: yellowgreen;
+
+    width: 500px;
+    height: 200px;
+
+    margin: 0 auto;
+} */
+
+span {
+
+    display: inline-block;
+
+    background-color: red;
+    color: white;
+
+    width: 500px;
+    margin-top: 200px;
+
+    padding: 50px;
+}
