@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+}
+
+header {
+    background: yellow;
+    grid-area: h;
+}
+
+main {
+    background: blue;
+    grid-area: m;
+}
+
+aside {
+    background: green;
+    grid-area: a;
+}
+
+footer {
+    background: red;
+    grid-area: f;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows:12vh 70vh 10vh;
+    grid-template-areas: "h h"
+                        "m a"
+                        "f f";
+}
