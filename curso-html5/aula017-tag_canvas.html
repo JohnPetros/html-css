@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo de HTML - CFB Cursos</title>
+</head>
+<body>
+
+    <!-- 
+       O elemento HTML <canvas> é usado para desenhar gráficos, em tempo real, via JavaScript.
+
+            O elemento <canvas> é apenas um contêiner para gráficos. deve-se usar JavaScript para realmente desenhar os gráficos.
+
+            O Canvas tem vários métodos para desenhar caminhos, caixas, círculos, texto e adicionar imagens.
+    -->
+
+  <canvas id="canvas" width="500px" height="500px" style="border: 1px black solid">
+    Seu navegador não tem suporte ao elemento canvas!
+  </canvas>
+
+  <script>
+    function desenhar(){
+        var canvas = document.getElementById('canvas')
+        var ctx = canvas.getContext('2d')
+        ctx.fillRect(25, 25, 100, 100)
+    }
+    desenhar()
+</script>
+
+</body>
+</html>
