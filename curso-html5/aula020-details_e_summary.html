@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+        summary::-webkit-details-marker {
+            color: red;
+        }
+        details[open] summary::-webkit-details-marker {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        A <details>tag especifica detalhes adicionais que o usuário pode visualizar.
+
+            A tag <details> é frequentemente usada para criar um widget interativo que o usuário pode abrir e fechar. Por padrão, o widget é fechado. Quando aberto, ele se expande e exibe o conteúdo dentro dele.
+
+            Qualquer tipo de conteúdo pode ser colocado dentro da tag <details>. 
+            
+        A tag <summary> é usada em conjunto com <details> para especificar um cabeçalho visível para o <details>.
+    -->
+
+    <details open>
+        <summary>Cursos do CFB Cursos</summary>
+        <article>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>PHP</p>
+            <p>MySQL</p>
+        </article>
+    </details>
+
+</body>
+</html>
