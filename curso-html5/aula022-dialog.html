@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <script>
+        function abrirDialog(){
+            document.getElementById('dialog').setAttribute('open', '')
+        }
+        function fecharDialog(){
+            document.getElementById('dialog').removeAttribute('open')
+        }
+    </script>
+</head>
+<body>
+
+    <!-- 
+        A tag <dfn> representa o "elemento de definição" e especifica um termo que será definido dentro do conteúdo.
+
+            A tag pai mais próxima da tag <dfn> também deve conter a definição/explicação do termo.
+    -->
+
+    <button onclick="abrirDialog()">Abrir</button>
+    <button onclick="fecharDialog()">Fechar</button>
+    <dialog id="dialog" open>
+        <p><dfn title="Linguagem de marcação para web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação utilizada na contrução de páginas na Web</p>
+        <p><dfn><abbr title="formatação para páginas web">CSS</abbr> Cascading Style Sheets recurso para adicionar estilos/formatações a um documento web.</dfn></p>
+    </dialog>
+
+</body>
+</html>
