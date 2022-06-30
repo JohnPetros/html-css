@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+        dialog{
+            padding: 0;
+            border: 0;
+            border-radius: 7px;
+            box-shadow: 0 0 10px black;
+            flex-direction: column;
+        }
+        dialog::backdrop{
+            background-color: rgba(0, 0, 0, 0.507);
+        }
+        .dialog-titulo{
+            background-color: #eee;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #aaa;
+            height: 40px;
+        }
+        .dialog-corpo{
+            background-color: white;
+            padding: 7px;
+        }
+        .dialog-rodape{
+            background-color: white;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            padding: 7px;
+            border-top: 1px solid #aaa;
+        }
+        #btn-fechar{
+            border: none;
+            border-radius: 7px;
+            padding: 7px;
+            outline: none;
+        }
+        #btn-fechar:hover{
+            background-color: #eee;
+        }
+    </style>
+    <script>
+        function abrirDialog(){
+            document.getElementById('btn_dialog').innerHTML = 'Fechar'
+            document.getElementById('dialog').setAttribute('open', '')
+        }
+        function fecharDialog(){
+            document.getElementById('btn_dialog').innerHTML = 'Abrir'
+            document.getElementById('dialog').removeAttribute('open')
+        }
+        function controlarDialog(titulo, msg){
+            if(document.getElementById('dialog').open){
+                fecharDialog()
+            } else {
+                abrirDialog()
+                document.getElementById('titulo').innerHTML = titulo
+                document.getElementById('msg').innerHTML = msg
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- 
+        A tag <dialog> define uma caixa de diálogo ou subjanela.
+
+            O elemento <dialog> facilita a criação de diálogos pop-up e modais em uma página da web.
+    -->
+
+    
+    <button onclick="controlarDialog('Curso de HTML', 'Curso de HTML Completo e Profissional do canal CFB Cursos')" id="btn_dialog">Abrir</button>
+
+
+    <dialog id="dialog">
+        <div class="dialog-titulo">
+            <h3 id="titulo"></h3>
+        </div>
+        <div class="dialog-corpo">
+            <p>Caixa de diálogo nativa HTML5</p>
+            <p id="msg"></p>
+        </div>
+        <div class="dialog-rodape">
+            <button id="btn-fechar" onclick="fecharDialog()">Fechar</button>
+        </div>
+    </dialog>
+
+</body>
+</html>
