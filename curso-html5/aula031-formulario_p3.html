@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+      .quebra{
+        display: block;
+    }
+    .espaco_b{
+          margin-bottom: 15px;
+      }
+    .espaco_t{
+        margin-top: 15px;
+    }
+    form {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eee;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 
+            O <input type="checkbox"> define uma caixa de seleção.
+
+                    A caixa de seleção é mostrada como uma caixa quadrada que é marcada (marcada) quando ativada.
+
+                    As caixas de seleção são usadas para permitir que um usuário selecione uma ou mais opções de um número limitado de opções.   
+                    
+            
+            O <input type="password"> define um campo de senha (os caracteres são mascarados).
+
+                    quaisquer formulários que envolvam informações confidenciais, como senhas, devem ser veiculados por HTTPS.
+
+            
+            O <input type="radio"> define um botão de rádio.
+
+                    Os botões de opção são normalmente apresentados em grupos de rádio (uma coleção de botões de opção que descrevem um conjunto de opções relacionadas). Apenas um botão de opção em um grupo pode ser selecionado ao mesmo tempo.
+
+                    O grupo de rádio deve compartilhar o mesmo nome (o valor do atributo name) para ser tratado como um grupo. Depois que o grupo de opções é criado, selecionar qualquer botão de opção nesse grupo desmarca automaticamente qualquer outro botão de opção selecionado no mesmo grupo. Pode se ter quantos grupos de rádio em uma página quiser, desde que cada grupo tenha seu próprio nome.
+
+                    O atributo value define o valor exclusivo associado a cada botão de opção. O valor não é mostrado ao usuário, mas é o valor que é enviado ao servidor em "enviar" para identificar qual botão de opção foi selecionado.
+
+    -->
+
+    <form name="f_cadastro" action="#" method="get">
+      <label class="quebra" for="f_nome">Username:</label>
+      <input class="espaco_b" type="text" name="f_username" maxlength="20" size="25"/>
+      <label class="quebra" for="f_nome">Senha:</label>
+      <input class="espaco_b" type="password" name="f_senha" maxlength="10" size="25">
+      <label class="quebra" for="f_nome">Esportes favoritos:</label>
+      <input type="checkbox" name="f_esporte" value="futebol" >Futebol
+      <input type="checkbox" name="f_basquete" value="basquete" >Basquete
+      <input type="checkbox" name="f_natacao" value="natacao" >Natação
+      <label class="quebra espaco_t" for="f_nome">Possui carro?</label>
+      <input type="radio" name="f_carro" value="sim" checked>Sim
+      <input type="radio" name="f_carro" value="nao">Não
+
+      <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar"/>
+    </form>
+
+
+  </body>
+</html>

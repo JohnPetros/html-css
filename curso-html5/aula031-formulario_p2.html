@@ -22,7 +22,7 @@
 <body>
 
     <!-- 
-      A <input>tag especifica um campo de entrada onde o usuário pode inserir dados.
+      A tag <input> especifica um campo de entrada onde o usuário pode inserir dados.
 
             O elemento <input> é o elemento de formulário mais importante.
 
@@ -30,8 +30,45 @@
 
             Os diferentes tipos de entrada são os seguintes:
 
-            <input type="button">
-            <input type="checkbox">
+           O <input type="text">define um campo de texto de linha única.
+
+                    A largura padrão do campo de texto é de 20 caracteres.
+            
+                    
+            O <input type="reset">define um botão de reset que redefine todos os valores do formulário para seus valores iniciais.
+
+                    Dica: É bom evitar botões de reset em seus formulários! É frustrante para os usuários clicarem neles por engano.
+
+
+            O <input type="submit"> define um botão de envio que envia todos os valores de formulário para um manipulador de formulário.
+
+                    O manipulador de formulário geralmente é uma página do servidor com um script para processar os dados de entrada.
+
+                    O manipulador de formulário é especificado no atributo action do formulário.
+            
+
+            O <input type="button"> define um botão clicável (usado principalmente com um JavaScript para ativar um script). 
+
+
+            É recomendável sempre usar a tag <label> para definir rótulos para <input type="text">, <input type="checkbox">, <input type="radio">, <input type="file">e <input type="password"> para melhores práticas de acessibilidade!
+    -->
+
+   <form name="f_cadastro" action="#" method="post">
+        <label for="f_nome">Nome:</label>
+        <input type="text" name="f_nome" value="CFB Cursos">
+        <div id="dv_btns">
+            <input type="submit" name="f_nome" value="Gravar">
+            <input type="reset" name="f_nome" value="Limpar">
+            <input type="button" name="f_nome" value="nada">
+        </div>
+   </form>
+   </form>
+   
+</body>
+</html>
+
+
+<!-- <input type="checkbox">
             <input type="color">
             <input type="date">
             <input type="datetime-local">
@@ -51,20 +88,5 @@
             <input type="text">(valor padrão)
             <input type="time">
             <input type="url">
-            <input type="week">
+            <input type="week"> -->
 
-            ´É recomendável sempre usar a tag <label> para definir rótulos para <input type="text">, <input type="checkbox">, <input type="radio">, <input type="file">e <input type="password">.
-    -->
-
-   <form name="f_cadastro" action="#" method="post">
-        <label for="f_nome">Nome:</label>
-        <input type="text" name="f_nome" value="CFB Cursos">
-        <div id="dv_btns">
-            <input type="submit" name="f_nome" value="Gravar">
-            <input type="reset" name="f_nome" value="Limpar">
-            <input type="button" name="f_nome" value="nada">
-        </div>
-   </form>
-   
-</body>
-</html>
