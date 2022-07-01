@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+      .quebra{
+        display: block;
+    }
+    .espaco_b{
+          margin-bottom: 15px;
+      }
+    .espaco_t{
+        margin-top: 15px;
+    }
+    form {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eee;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 
+            O <input type="time">define um controle para inserir um horário (sem fuso horário).
+                    
+            
+           O <input type="date">define um selecionador de data.
+
+                  O valor resultante inclui o ano, mês e dia.
+
+            
+           O <input type="datetime-local"> define um selecionador de data e hora em um mesmo elemento.
+
+                  O valor resultante inclui o ano, mês, dia e hora.
+    -->
+
+    <form name="f_cadastro" action="#" method="get">
+
+      <label class="quebra" for="">Hora:</label>
+      <input type="time" name="f_hora" min="09:00" max="17:00" required>
+
+      <label class="quebra espaco_t" for="">Data:</label>
+      <input type="date" name="f_data" min="2019-06-03" max="2019-06-08" required>
+
+      <label class="quebra espaco_t" for="">Data e Hora:</label>
+      <input type="datetime-local" name="f_data_hora" min="2019-06-03" max="2019-06-08" required>
+
+      <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar"/>
+    </form>
+
+  </body>
+</html>
