@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .rodape_final{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+        .art_rod{
+            border: 1px solid black;
+            width: 33.33%;
+            margin: 10px;
+        }
+        .img_rod{
+            width: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        A tag <footer> define um rodapé para um documento ou seção.
+
+            Um elemento <footer> normalmente contém:
+
+            informações de autoria
+            Informações sobre direitos autorais
+            Informações de Contato
+            Mapa do site
+            voltar ao topo links
+            documentos relacionados
+            Pode-se ter vários elementos <footer> em um documento.
+    -->
+
+    <div id="header">
+        <h1>Cabecalho</h1>
+    </div>
+
+    <article>
+        <p>Corpo da página</p>
+        <footer>
+            <a href="#">Site</a>
+        </footer>
+    </article>
+
+   <footer class="rodape_final">
+        <article class="art_rod">
+            <img src="images/icone-HTML_CP-1.jpg" class="img_rod">
+        </article>
+        <article class="art_rod">
+            <p>CFB Cursos, Canal do youtube com cursos de informática avançada</p>
+        </article>
+        <article class="art_rod">
+            <p>www.youtube.com/cfbcursos</p>
+        </article>
+   </footer>
+
+</body>
+</html>
