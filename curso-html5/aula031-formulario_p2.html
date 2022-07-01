@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+        input{
+            display: block;
+        }
+        form{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #eee;
+        }
+        #dv_btns{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+      A <input>tag especifica um campo de entrada onde o usuário pode inserir dados.
+
+            O elemento <input> é o elemento de formulário mais importante.
+
+            O elemento <input> pode ser exibido de várias maneiras, dependendo do atributo type.
+
+            Os diferentes tipos de entrada são os seguintes:
+
+            <input type="button">
+            <input type="checkbox">
+            <input type="color">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="email">
+            <input type="file">
+            <input type="hidden">
+            <input type="image">
+            <input type="month">
+            <input type="number">
+            <input type="password">
+            <input type="radio">
+            <input type="range">
+            <input type="reset">
+            <input type="search">
+            <input type="submit">
+            <input type="tel">
+            <input type="text">(valor padrão)
+            <input type="time">
+            <input type="url">
+            <input type="week">
+
+            ´É recomendável sempre usar a tag <label> para definir rótulos para <input type="text">, <input type="checkbox">, <input type="radio">, <input type="file">e <input type="password">.
+    -->
+
+   <form name="f_cadastro" action="#" method="post">
+        <label for="f_nome">Nome:</label>
+        <input type="text" name="f_nome" value="CFB Cursos">
+        <div id="dv_btns">
+            <input type="submit" name="f_nome" value="Gravar">
+            <input type="reset" name="f_nome" value="Limpar">
+            <input type="button" name="f_nome" value="nada">
+        </div>
+   </form>
+   
+</body>
+</html>
