@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+      .quebra{
+        display: block;
+    }
+    .espaco_b{
+          margin-bottom: 15px;
+      }
+    .espaco_t{
+        margin-top: 15px;
+    }
+    form {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eee;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 
+            O <input type="month">define um controle de mês e ano.
+
+                  O formato é "AAAA-MM".
+                    
+            
+          O <input type="week">
+          
+                  define um controle de semana e ano (sem fuso horário).
+
+            
+           O <input type="datetime-local"> define um selecionador de data e hora em um mesmo elemento.
+
+                  O valor resultante inclui o ano, mês, dia e hora.
+
+            O <input type="hidden"> define um campo de entrada oculto.
+
+                  Um campo oculto permite que os desenvolvedores da Web incluam dados que não podem ser vistos ou modificados pelos usuários quando um formulário é enviado.
+
+                  Um campo oculto geralmente armazena o registro do banco de dados que precisa ser atualizado quando o formulário é enviado.
+
+                  Observação: embora o valor não seja exibido para o usuário no conteúdo da página, ele fica visível (e pode ser editado) usando as ferramentas de desenvolvedor de qualquer navegador ou a funcionalidade "Exibir código-fonte". Não é recomendável usar entradas ocultas como forma de segurança!
+    -->
+
+    <form name="f_cadastro" action="#" method="get">
+
+      <label class="quebra" for="">Mês:</label>
+      <input type="month" name="f_mes">
+
+      <label class="quebra espaco_t" for="">Semana:</label>
+      <input type="week" name="f_semana">
+
+      <input type="hidden" name="canal" value="cfbcursos">
+      <input type="hidden" name="curso" value="html5">
+
+
+      <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar"/>
+    </form>
+
+  </body>
+</html>
