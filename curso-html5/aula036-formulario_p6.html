@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+      .quebra{
+        display: block;
+    }
+    .espaco_b{
+          margin-bottom: 15px;
+      }
+    .espaco_t{
+        margin-top: 15px;
+    }
+    form {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eee;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 
+           O <input type="color"> define um seletor de cores.
+
+                  O valor padrão é #000000 (preto). O valor deve estar em notação hexadecimal de sete caracteres.
+                    
+            
+          O <input type="email"> define um campo para um endereço de e-mail.
+
+                  O valor de entrada é validado automaticamente para garantir que seja um endereço de e-mail formatado corretamente.
+
+                  Para definir um campo de e-mail que permita vários endereços de e-mail, adicione o atributo "multiple".
+
+            
+           O <input type="image">define uma imagem como um botão de envio.
+
+                  O caminho para a imagem é especificado no atributo src .
+    -->
+
+    <form name="f_cadastro" action="#" method="get">
+      <!-- color, email, image -->
+
+      <label class="quebra" for="">Selecione uma cor:</label>
+      <input type="color" name="f_cor">
+
+      <label class="quebra espaco_t" for="">Email:</label>
+      <input type="email" name="f_email">
+
+      <input class="quebra espaco_t" src="capa.jpg" type="image" name="enviar">
+
+
+      <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar"/>
+    </form>
+
+  </body>
+</html>
