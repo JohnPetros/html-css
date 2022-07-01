@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+    .quebra{
+        display: block;
+    }
+    .espaco_b{
+          margin-bottom: 15px;
+      }
+    .espaco_t{
+        margin-top: 15px;
+    }
+    form {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eee;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 
+          O elemento <select> é usado para criar uma lista suspensa.
+
+                O elemento <select> é mais frequentemente usado em um formulário, para coletar a entrada do usuário.
+
+                O atributo name  é necessário para referenciar os dados do formulário após o envio do formulário (se omitir o atributo name, nenhum dado da lista suspensa será enviado).
+
+                O atributo id é necessário para associar a lista suspensa a um label.
+
+          As tags <option> e <select> dentro do elemento definem as opções disponíveis na lista suspensa.
+     
+    -->
+
+    <form name="f_cadastro" action="#" method="get"> 
+
+      <select name="f_cor" id="">
+        <option value="preto">Preto</option>
+        <option value="branco">Branco</option>
+        <option value="vermelho">Vermelho</option>
+        <option value="verde">Verde</option>
+        <option value="azul">Azul</option>
+      </select>
+
+      <select name="f_gen" id="" size="2">
+        <option value="m">Masculino</option>
+        <option value="f">Feminino</option>
+      </select>
+
+      <select name="f_gen" id="" multiple>
+        <option value="ip3d35">Impressoa 3D YUT35</option>
+        <option value="t98">TV 98" led</option>
+      </select>
+
+
+      <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar"/>
+    </form>
+
+  </body>
+</html>
