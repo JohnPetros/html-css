@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Completo de HTML - CFB Cursos</title>
+    <style>
+    .quebra{
+        display: block;
+    }
+    .espaco_b{
+          margin-bottom: 15px;
+      }
+    .espaco_t{
+        margin-top: 15px;
+    }
+    form {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eee;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 
+          O <input type="file"> define um campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos.
+
+                  Para definir um campo de seleção de arquivo que permita a seleção de vários arquivos, é preciso adicionar o atributo multiple.
+                    
+            
+         O <input type="number">define um campo para inserir um número.
+
+                  Use os seguintes atributos para especificar restrições:
+
+                  max - especifica o valor máximo permitido
+                  min - especifica o valor mínimo permitido
+                  step - especifica os intervalos de números (passo)
+                  value - Especifica o valor padrão
+
+        O <input type="url"> define um campo para inserir uma URL.
+
+                  O valor de entrada é validado automaticamente antes que o formulário possa ser enviado.
+     
+    -->
+
+    <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data"> <!-- O atributo enctype especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor. O valor multipart/form-data é necessário se o usuário fizer upload de um arquivo através do formulário -->
+
+      <label class="quebra" for="">Selecione o arquivo:</label>
+      <input type="file" name="f_arquivo" multiple accept=".jpg,.gif,.png">
+
+      <label class="quebra espaco_t" for="">Digite o URL:</label>
+       <input type="url" name="f_url"> 
+
+
+      <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar"/>
+    </form>
+
+  </body>
+</html>
