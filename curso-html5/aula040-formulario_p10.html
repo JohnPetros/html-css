@@ -26,15 +26,24 @@
     <!-- 
           A tag <datalist> especifica uma lista de opções predefinidas para um elemento <input>.
 
-          A tag <datalist> é usada para fornecer um recurso de "autocomplete" para elementos <input>. Os usuários verão uma lista suspensa de opções predefinidas à medida que inserem dados.
+                A tag <datalist> é usada para fornecer um recurso de "autocomplete" para elementos <input>. Os usuários verão uma lista suspensa de opções predefinidas à medida que inserem dados.
 
-          O atributo id do elemento <datalist> deve ser igual ao atributo list do elemento <input> (isso os une).
+                O atributo id do elemento <datalist> deve ser igual ao atributo list do elemento <input> (isso os une).
+
+        O <input type="range">define um controle para inserir um número cujo valor exato não é importante (como um controle deslizante).
+
+                O intervalo padrão é de 0 a 100. No entanto, você pode definir restrições sobre quais números são aceitos com os atributos abaixo.
+
+                max - especifica o valor máximo permitido
+                min - especifica o valor mínimo permitido
+                step - especifica os intervalos de números (passo)
+                value - Especifica o valor padrão
     -->
 
     <form name="f_cadastro" action="#" method="get"> 
 
       <input list="f_transportes" name="f_cor">
-      
+
       <datalist id="f_cores">
         <option value="red">Vermelho</option>
         <option value="green">Verde</option>
@@ -50,6 +59,8 @@
         <option value="04">Motocicleta</option>
       </datalist>
       
+      <input type="range" min="-10" max="10" value="5" step="5">
+
       <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar"/>
     </form>
 
