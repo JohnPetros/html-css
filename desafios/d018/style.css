@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+}
+
+footer {
+    height: 4rem;
+    width: 100%;
+
+    background-color: rgb(199, 208, 211);
+    color: white;
+    text-align: center;
+
+    margin-top: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
