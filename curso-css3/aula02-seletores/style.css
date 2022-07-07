@@ -1,0 +1,40 @@
+/* 
+    Seletores CSS
+        Um seletor CSS seleciona o(s) elemento(s) HTML que você deseja estilizar.
+
+    Seletores CSS são usados ​​para "encontrar" (ou selecionar) os elementos HTML que você deseja estilizar.
+
+    Podemos dividir os seletores CSS em cinco categorias:
+
+        .Seletores simples (seleciona elementos com base no nome, id, classe)
+        .Seletores de combinação (seleciona elementos com base em um relacionamento específico entre eles)
+        .Seletores de pseudo-classe (seleciona elementos com base em um determinado estado)
+        .Seletores de pseudo-elementos (seleciona e estiliza uma parte de um elemento)
+        .Seletores de atributo (seleciona elementos com base em um atributo ou valor de atributo)
+
+*/
+
+
+p { /* O seletor de elemento seleciona elementos HTML com base no nome do elemento. */
+    color: red; 
+    font-size: 20pt;    
+}
+
+#p1 { /* O seletor id usa o atributo id de um elemento HTML para selecionar um elemento específico. */
+    color: blue;
+}
+
+.txt { /* O seletor de classe seleciona elementos HTML com um atributo de classe específico. */
+    color: green;
+    font-size: 20pt;
+}
+
+h4, h5, h6 { /* O seletor de agrupamento seleciona todos os elementos HTML com as mesmas definições de estilo. */
+    color: pink;
+    font-size: 20pt;
+}
+
+* { /* O seletor universal (*) seleciona todos os elementos HTML na página. */
+    margin: 0;
+    padding: 0;
+}
