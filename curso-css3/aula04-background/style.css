@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(56, 55, 55);
+  background-image: url(https://i0.wp.com/cfbcursos.com.br/wp-content/uploads/2017/02/LOGO2-CFB-SITE-450x107.png?ssl=1); /* A propriedade background-image  especifica uma imagem a ser usada como plano de fundo de um elemento.
+  Por padrão, a imagem é repetida para cobrir todo o elemento. */
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: 200px 200px;
+}
+
+p {
+  background-color: greenyellow;
+  background-image: url(https://i0.wp.com/cfbcursos.com.br/wp-content/uploads/2017/04/image-1-1.png?ssl=1), url(https://img.imageboss.me/revista-cdn/cdn/18618/c4b84624c8f5be6e074871c38f02c176c3d4c0dc.png?1556568611);
+  background-repeat: no-repeat, repeat;
+  background-size: 150px, 200px;
+  background-position: 0 0, 0 0;
+  color: white;
+  font-size: 120pt;
+}
