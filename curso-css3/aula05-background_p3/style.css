@@ -1,0 +1,5 @@
+body {
+  background-image: url(https://cfbcursos.com.br/wp-content/uploads/2017/08/LOGO3-CFB-SITE-450x155.png), url(https://i0.wp.com/cfbcursos.com.br/wp-content/uploads/2017/04/image-1-1.png?ssl=1);
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed, scroll; /* A propriedade background-attachment define se uma imagem de plano de fundo rola com o restante da página ou é fixa. */
+}
