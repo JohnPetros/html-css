@@ -1,0 +1,15 @@
+#d1, #d2 {
+  width: 100px;
+  height: 100px;
+  padding: 100px;
+  border: black solid 10px;
+  border-radius: 40px; /* A propriedade border-radius define o raio dos cantos do elemento. Esta propriedade permite adicionar cantos arredondados aos elementos. */
+}
+
+#d1 {
+  border-radius: 100%;
+}
+
+#d2 {
+  border-radius: 0 40px 0 40px; /* o primeiro valor se aplica ao canto superior esquerdo, o segundo valor se aplica ao canto superior direito, o terceiro valor se aplica ao canto inferior direito e o quarto valor se aplica ao canto inferior esquerdo */
+}
