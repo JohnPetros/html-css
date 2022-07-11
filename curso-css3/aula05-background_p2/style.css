@@ -1,7 +1,7 @@
 #d1, #d2, #d3, #p1 {
   width: 700px;
   height: 110px;
-  border: 10px dotted black; /* A propriedade border é uma propriedade abreviada para: largura da borda estilo de borda (obrigatório) e Cor da borda*/
+  border: 10px dotted black; 
   padding: 0 100px 50px 10px; /* O padding de um elemento é o espaço entre seu conteúdo e sua borda. */
   background-image: url("https://source.unsplash.com/random");
 }

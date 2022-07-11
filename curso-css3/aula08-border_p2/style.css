@@ -1,0 +1,23 @@
+p {
+  width: 300px;
+
+  border-top: solid black 20px; /* A propriedade border-top abreviada define todas as propriedades da borda superior em uma declaração. */
+  border-right: double blue 20px; /* A propriedade border-right abreviada define todas as propriedades da borda direita em uma declaração. */ 
+  border-bottom: dotted red 20px; /* A propriedade border-bottom abreviada define todas as propriedades da bordborda inferior em uma declaração. */
+  border-left: groove green 20px; /* A propriedade border-left abreviada define todas as propriedades da borda esquerda em uma declaração. */
+
+  border-top-width: 10px;
+  border-right-width: 30px;
+  border-bottom-width: 30px;
+  border-left-width: 30px;
+
+  border-top-style: solid;
+  border-right-style: double;
+  border-bottom-style: dashed;
+  border-left-style: groove;
+
+  border-top-color: black;
+  border-right-color: blue;
+  border-bottom-color: red;
+  border-left-color: green;
+}

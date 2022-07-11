@@ -1,0 +1,16 @@
+#d1, #d2, p {
+  width: 300px; /* A propriedade width define a largura de um elemento. */
+  height: 300px; /*A propriedade height define a altura de um elemento. */
+  background-color: #ddd;
+  border: black solid 20px /* A propriedade border é uma propriedade abreviada para: largura da borda estilo de borda (obrigatório) e Cor da borda*/
+}
+
+#d1 {
+  border-color: blue; 
+}
+
+#d2 {
+  border-style: dotted; /* A propriedade border-style  define o estilo das quatro bordas de um elemento. Esta propriedade pode ter de um a quatro valores. */ 
+  border-width: 30px; /* A border-widthpropriedade define a largura das quatro bordas de um elemento. Esta propriedade pode ter de um a quatro valores. */
+  border-color: red;  /* A propriedade border-color define a cor das quatro bordas de um elemento. Esta propriedade pode ter de um a quatro valores. */ 
+}
