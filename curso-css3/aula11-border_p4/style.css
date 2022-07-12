@@ -1,15 +1,13 @@
-#d1, #d2 {
-  width: 100px;
-  height: 100px;
-  padding: 100px;
-  border: black solid 10px;
-  border-radius: 40px; /* A propriedade border-radius define o raio dos cantos do elemento. Esta propriedade permite adicionar cantos arredondados aos elementos. */
+p {
+  border: solid 30px;
+  border-image: url(https://i.stack.imgur.com/sjbeu.png) 90 round; /* A propriedade border-image  permite especificar uma imagem a ser usada como borda ao redor de um elemento. */
 }
 
-#d1 {
-  border-radius: 100%;
-}
-
-#d2 {
-  border-radius: 0 40px 0 40px; /* o primeiro valor se aplica ao canto superior esquerdo, o segundo valor se aplica ao canto superior direito, o terceiro valor se aplica ao canto inferior direito e o quarto valor se aplica ao canto inferior esquerdo */
-}
+/* 
+A propriedade border-image pode conter 4 propriedades:
+border-image-source: O caminho (URL) para a imagem a ser usada como borda
+border-image-slice: Como cortar a imagem da borda
+border-image-width: The width of the border image	
+border-image-outset: A quantidade pela qual a área da imagem da borda se estende além da caixa da borda
+border-image-repeat: Se a imagem da borda deve ser repetida, arredondada ou esticada
+ */

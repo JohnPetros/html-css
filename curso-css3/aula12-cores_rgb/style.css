@@ -1,0 +1,40 @@
+/* As cores são exibidas combinando as luzes VERMELHA, VERDE e AZUL. */
+/* 
+Com CSS, as cores podem ser especificadas de diferentes maneiras:
+.Por nomes de cores
+.Como valores RGB
+.Como valores hexadecimais
+.Como valores HSL (CSS3)
+.Como valores HWB (CSS4)
+.Com a palavra- currentcolorchave 
+*/
+
+
+p {
+  font-size: 50px;
+}
+
+#div1 {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 0, 0, 0.46); 
+  /* 
+  Um valor de cor RGB é especificado com: rgb(red, green, blue).
+
+  Cada parâmetro (vermelho, verde e azul) define a intensidade da cor como um número inteiro entre 0 e 255.
+  
+  Por exemplo, rgb(0, 0, 255) é renderizado como azul, porque o parâmetro blue é definido como seu valor mais alto (255) e os outros são definidos como 0. 
+  */
+}
+
+#div2 {
+  position: absolute;
+  top: 350px;
+  left: 500px;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 0, 255, 0.241)
+}
