@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+p {
+  border: solid 1px red;
+  margin: 0;
+  text-align: center;
+}
+
+div {
+  border: solid 1px black;
+}
+
+#div1 {
+  width: 300px;
+  height: 300px;
+
+  margin: 50px 200px 300px 50px; /* As propriedades CSS margin são usadas para criar espaço ao redor dos elementos, fora de quaisquer bordas definidas. */
+  /* 
+  margin-top: 50px;
+  margin-right: 200px;
+  margin-bottom: 300px;
+  margin-left: 50px; 
+  */
+}
+
+#div2 {
+  width: 300px;
+  height: 300px;
+
+  margin: auto;
+}
