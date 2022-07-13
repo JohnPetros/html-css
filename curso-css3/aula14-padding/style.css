@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+#div1 {
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 100px; /* As propriedades padding são usadas para gerar espaço ao redor do conteúdo de um elemento, dentro de qualquer borda definida. */
+}
+
+#div2 {
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 50px 0 150px 200px;
+}
+
+#div3 {
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 150px;
+    padding-left: 200px;
+}
