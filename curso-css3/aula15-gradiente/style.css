@@ -1,0 +1,35 @@
+/* 
+Os gradientes CSS permitem exibir transições suaves entre duas ou mais cores especificadas. 
+*/
+
+#div1{
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+    /* background: linear-gradient(to right, red, yellow); */
+    /* background: linear-gradient(180deg, red, yellow, blue); */
+    /* background: linear-gradient(180deg, red 15%, yellow 25%, blue 100%); */
+    background: radial-gradient(red 50%, yellow);
+}
+
+#div2{
+    width: 800px;
+    height: 300px;
+    border: 1px black solid;
+    background: radial-gradient(circle, red, yellow);
+}
+
+#div3{
+    width: 800px;
+    height: 300px;
+    border: 1px black solid;
+    background: repeating-linear-gradient(90deg, red, yellow 20%);
+    background: repeating-radial-gradient(circle, red, yellow 20%)
+}
+
+h1 {
+    font-size: 70px;
+    background: linear-gradient(90deg, red, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;   
+}
