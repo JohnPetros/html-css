@@ -30,6 +30,6 @@ Os gradientes CSS permitem exibir transições suaves entre duas ou mais cores e
 h1 {
     font-size: 70px;
     background: linear-gradient(90deg, red, yellow);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;   
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;    */
 }
