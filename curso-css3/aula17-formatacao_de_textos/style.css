@@ -1,13 +1,63 @@
-h1 {
-    font-size: 70px;
+p {
     color: red;
-    text-shadow: 5px 5px 5px black, 10px 10px 5px blue, 15px 15px 5px green; /* A propriedade text-shadow  adiciona sombra ao texto.
-    Esta propriedade aceita uma lista de sombras separadas por vírgulas a serem aplicadas ao texto. */
+}
+div {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+
+    white-space: nowrap; /* A propriedade white-space especifica como o espaço em branco dentro de um elemento é tratado. */
+    overflow: auto; /* A propriedade overflow especifica se o conteúdo deve ser recortado ou adicionado barras de rolagem quando o conteúdo de um elemento for muito grande para caber na área especificada. 
+    A propriedade overflow tem os seguintes valores:
+            visible- Valor Padrão. O conteúdo não é cortado. O conteúdo é renderizado fora da caixa do elemento
+            hidden- O conteúdo é cortado e o restante do conteúdo ficará invisível
+            scroll- O conteúdo é cortado e uma barra de rolagem é adicionada para ver o restante do conteúdo
+            auto- Semelhante a scroll, mas adiciona barras de rolagem apenas quando necessário */
+    word-break: break-all; /* A propriedade word-break  especifica como as palavras devem ser quebradas ao chegar ao final de uma linha. */
 }
 
-div {
-    width: 300px;
-    height: 300px;
-    border: solid 1px black;
-    box-shadow: 10px 10px 5px gray; /* A propriedade box-shadow anexa uma ou mais sombras a um elemento. */
+div > p {
+    color: black;
+    text-decoration: none;
+    text-align: justify;
+    letter-spacing: normal;
+    word-spacing: initial;
+    line-height: initial;
+    text-transform: initial;
+    direction: initial;
+}
+
+p {
+    text-transform: uppercase; /* A text-transformpropriedade controla a capitalização do texto. */
+    text-indent: 50px; /* A propriedade text-indent especifica o recuo da primeira linha em um bloco de texto. */
+    letter-spacing: 2px; /* A propriedade letter-spacing aumenta ou diminui o espaço entre os caracteres em um texto. */
+    line-height: 2; /* A propriedade line-height especifica a altura de uma linha. */
+    direction: rtl; /* A propriedade direction especifica a direção do texto/direção de escrita dentro de um elemento de nível de bloco. */
+    word-spacing: 50px; /* A propriedade word-spacing aumenta ou diminui o espaço em branco entre as palavras. */
+    text-align-last: center; /* A propriedade text-align-last especifica como alinhar a última linha de um texto. */
+}
+
+.p1 {
+    color: red;
+    text-align: left; /* A propriedade text-align especifica o alinhamento horizontal do texto em um elemento. */
+    text-decoration: none; /* A propriedade text-decoration define o estilo da decoração do texto (como sólido, ondulado, pontilhado, tracejado, duplo). */
+}
+
+.p2 {
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.p3 {
+    color: blue;
+    text-align: center;
+    text-decoration: overline;
+
+}
+
+.p4 {
+    color: yellow;
+    text-align: justify;
+    text-decoration: line-through;
 }
