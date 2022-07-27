@@ -1,6 +1,2 @@
 # html-css
- Curso de HTML5 e CSS3 do CursoVídeo
-
- Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
-
-<a href="https://johnpetros.github.io/html-css/exercios/index.html">Executar exercício 1</a>
+Este Repositório contém meus estudos sobre as linguagens HTML e CSS.
