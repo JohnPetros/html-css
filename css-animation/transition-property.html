@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        .box-red, .box-green, .box-blue, .box-yellow {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            transition-duration: 2s;
+        }
+        .box-red {
+            background-color: red;
+        }
+        .box-red:hover {
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+        }
+        .box-green {
+            background-color: green;
+        }
+        .box-green:hover {
+            transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+            background-color: darkorchid;
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+        }
+        .box-blue {
+            background-color: blue;
+            transition: all 1s linear 1s;
+        }
+        .box-blue:hover {
+            width: 350px;
+        }
+        .box-yellow {
+            background-color: yellow;
+            transition: all 2s linear;
+        }
+        .box-yellow:hover {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-red"></div>
+    <div class="box-green"></div>
+    <div class="box-blue"></div>
+    <div class="box-yellow"></div>
+</body>
+</html>
