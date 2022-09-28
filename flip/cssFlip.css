@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card {
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+#card .image {
+    position: absolute;
+    top: 10.5%;
+    left: 33%;
+    z-index: -1;
+    background-image: url('https://cdn.statsroyale.com/images/cards/full/minipekka.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 35.5vh;
+}
+
+#front {
+  transform: rotateY(180deg);
+  background-image: url('https://i.ibb.co/D7QKBjR/card-depositphotos-bgremover-1.png');
+}
+
+.face {
+  width: 692px;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
