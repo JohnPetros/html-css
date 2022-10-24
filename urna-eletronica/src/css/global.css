@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: #1b305a;
+  color: #eee;
+  height: 10vh;
+  padding-inline: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+header img {
+  width: 5rem;
+}
+
+main.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
