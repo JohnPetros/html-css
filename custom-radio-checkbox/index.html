@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Choose a trial a plan</legend>
+        <label class="radio-wrapper">
+          <div>
+            <input type="radio" name="plan" id="plan-1" value="plan-1" />
+            <strong for="plan-1">Standard</strong>
+          </div>
+          <p>
+            5 TB of Space lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Repellat ducimus quidem maiores odio
+          </p>
+        </label>
+        <label class="radio-wrapper">
+          <div>
+            <input type="radio" name="plan" id="plan-2" value="plan-2" />
+            <strong for="plan-2">Standard</strong>
+          </div>
+          <p>
+            As much space as you wish sit amet consectetur adipisicing elit.
+            Repellat ducimus quidem maiores odio Lorem ipsum, dolor sit amet
+            elit. Perferendis, consequatur!
+          </p>
+        </label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="terms" id="terms" checked />
+          <label for="terms"
+            >I agree with <a href="#">terms and conditions</a></label
+          >
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="mailing" id="mailing" />
+          <label for="mailing"
+            >I'd like to receive mailing messages agreen with
+            <a href="#">terms and conditions</a></label
+          >
+        </div>
+        <button type="submit">Start free trial</button>
+        <small>No credit card needed</small>
+      </fieldset>
+    </form>
+  </body>
+</html>

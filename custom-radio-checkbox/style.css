@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-100: #f4fafa;
+  --primary-300: #dfebeb;
+  --text-color: #10131c;
+
+  font-size: 62.5%;
+}
+
+a {
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--primary-100);
+  color: var(--text-color);
+
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body * {
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  background-color: white;
+
+  width: min(73rem, 87%);
+  margin: auto;
+  padding: 4.4rem 8.8rem;
+  border-radius: 3.2rem;
+
+  box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+form * {
+  font-size: 1.4rem;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-size: 2.4rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* radio */
+.radio-wrapper {
+  border-radius: 1.4rem;
+  background-color: var(--primary-100);
+  border: 1px solid #bbc1c1;
+  padding: 2.4rem;
+  display: block;
+}
+
+.radio-wrapper > div {
+  display: flex;
+  gap: .8rem;
+}
+
+
+.radio-wrapper input[type="radio"] {
+  appearance: none;
+
+  border: 1px solid #bbc1c1;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+
+  background-color: white;
+}
+
+.radio-wrapper input[type="radio"]:checked {
+  background-image: radial-gradient(white 35%, black 40%);
+}
+
+.radio-wrapper:not(:has(:checked)) {
+  opacity: .6;
+}
+
+.radio-wrapper strong {
+  font-size: 2rem;
+  
+}
+
+legend + .radio-wrapper {
+  margin-top: 3rem;
+}
+
+.radio-wrapper p {
+  margin-top: 1rem;
+  padding-left: 3.8rem;
+}
+
+.radio-wrapper + .radio-wrapper,
+.checkbox-wrapper + .checkbox-wrapper {
+  margin-top: 2.2rem;
+}
+
+/* checkbox */
+.checkbox-wrapper {
+  display: flex;
+  gap: .8rem;
+
+  padding-inline: 2rem;
+}
+
+.radio-wrapper + .checkbox-wrapper {
+  margin-top: 2.4rem;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  appearance: none;
+
+  flex-shrink: 0;
+
+  width: 2.8rem;
+  height: 2.8rem;
+
+  border: 1px solid #6b7473;
+  border-radius: .6rem;
+
+  position: relative;
+}
+
+.checkbox-wrapper input[type="checkbox"]:focus {
+  outline: 1px solid black;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::before {
+  content: "✔";
+  font-size: 2.4rem;
+  position: absolute;
+  top: -.5rem;
+  left: .3rem;
+}
+
+.checkbox-wrapper label {
+  margin-top: .4rem;
+}
+
+button {
+  margin-top: 2.8rem;
+
+  width: 100%;
+
+  background-color: #130f28;
+  height: 6.4rem;
+
+  color: white;
+
+  border: 0;
+
+  transition: background .2s;
+}
+
+button:hover {
+  background: #201a3d;
+  cursor: pointer;
+}
+
+small {
+  text-align: center;
+  display: block;
+  margin-top: 2rem;
+}
