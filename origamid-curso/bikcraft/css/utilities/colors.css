@@ -1,0 +1,21 @@
+:root {
+  --base-12: #000;
+  --base-11: #111;
+  --base-10: #2e2e2e;
+  --base-9: #404040;
+  --base-8: #595959;
+  --base-7: #717171;
+  --base-6: #9c9c9c;
+  --base-5: #b2b2b2;
+  --base-4: #cccc;
+  --base-3: #dedede;
+  --base-2: #ededed;
+  --base-1: #f7f7f7;
+  --base-0: #fff;
+
+  --primary-5: #332200;
+  --primary-4: #664400;
+  --primary-3: #a66f00;
+  --primary-2: #e4a30b;
+  --primary-1: #ffbb00;
+}
