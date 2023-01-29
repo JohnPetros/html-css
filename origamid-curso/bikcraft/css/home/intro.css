@@ -29,10 +29,6 @@
   margin-bottom: 32px;
 }
 
-.intro h1 span {
-  color: var(--primary);
-}
-
 .intro p {
   margin-bottom: 20px;
 
@@ -54,6 +50,10 @@
   }
   .intro h1 {
     margin-bottom: 16px;
+  }
+  .intro p {
+  color: var(--base-0);
+
   }
   .intro img {
     height: 300px;

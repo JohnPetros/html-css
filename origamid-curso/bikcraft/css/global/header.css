@@ -46,9 +46,6 @@
   .header-menu {
     gap: 20px;
   }
-  .header-menu a {
-    background-color: var(--base-10);
-  }
   .header-menu a::after {
     display: none;
   }

@@ -19,12 +19,12 @@
 }
 
 .font-1-lg {
-  font: 400 4rem/1.5 "Poppins", sans-serif;
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
 }
 
 .font-2-lg,
 .font-2-lg-b {
-  font: 400 4rem/1.5 "Roboto", sans-serif;
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
 }
 .font-2-lg-b {
   font-weight: 500;
@@ -33,15 +33,15 @@
 }
 
 .font-1-xlg {
-  font: 600 4rem/1.25 "Poppins", sans-serif;
+  font: 600 2rem/1.25 "Poppins", sans-serif;
 }
 
 .font-2-xlg {
-  font: 600 4rem/1.25 "Roboto", sans-serif;
+  font: 600 2rem/1.25 "Roboto", sans-serif;
 }
 
 .font-1-xxlg {
-  font: 600 4rem/1.125 "Poppins", sans-serif;
+  font: 500 4rem/1.125 "Poppins", sans-serif;
 }
 
 @media (max-width: 1200px) {
