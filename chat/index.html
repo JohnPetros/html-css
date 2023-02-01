@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Chat</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="top">
+        <div id="user-info">
+          <img
+            src="http://randomuser.me/api/portraits/women/50.jpg"
+            alt="Avatar de usuário"
+          />
+          <div id="user-status">
+            <strong>Cecília Sassaki</strong>
+            <div class="status">Online</div>
+          </div>
+        </div>
+        <div id="close-chat">
+          <i class="ph-x-fill"></i>
+        </div>
+      </div>
+      <div id="messages">
+        <div id="last-seen">Hoje 11:30</div>
+
+        <div class="messages">
+          <div class="message">
+            <div class="header">Cecília - 11:30</div>
+            <div class="body">Tive uma ideia incrível para um projeto! 😍</div>
+          </div>
+          <div class="message you">
+            <div class="header">Cecília - 11:32</div>
+            <div class="body">Sério? Me conta mais.</div>
+          </div>
+          <div class="message">
+            <div class="header">Cecília - 11:30</div>
+            <div class="body">
+              E se a gente fizesse um chat moderno e responsivo em apenas uma
+              semana?
+            </div>
+          </div>
+          <div class="message you">
+            <div class="header">Cecília - 11:30</div>
+            <div class="body">#boraCodar! 🚀</div>
+          </div>
+        </div>
+      </div>
+      <form id="bottom">
+        <input type="text" placeholder="Digite sua mensagem" />
+        <button type="submit">
+          <i class="ph-paper-plane-right-fill"></i>
+        </button>
+      </form>
+    </div>
+
+    <script>
+      const messages = document.querySelector(".messages");
+      messages.lastElementChild.scrollIntoView();
+    </script>
+  </body>
+</html>
