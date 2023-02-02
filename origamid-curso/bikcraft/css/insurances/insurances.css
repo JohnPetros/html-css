@@ -1,0 +1,80 @@
+.insurances-bg {
+  background-color: var(--base-11);
+}
+
+.insurances {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 20px 60px;
+  align-items: center;
+}
+
+.insurances h2 {
+  grid-column: 1/-1;
+  color: var(--base-0);
+}
+
+.insurances-item {
+  background-color: var(--base-12);
+  padding: 32px;
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.insurances-item h3 {
+  color: var(--base-6);
+  margin-bottom: 40px;
+}
+
+.insurances-item h3.gold {
+  color: var(--primary-1);
+}
+
+.insurances-item .price {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+  color: var(--base-0);
+}
+
+.insurances-item .monthly {
+  color: var(--base-6);
+}
+
+.insurances-item ul {
+  color: var(--base-0);
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+
+.insurances-item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.insurances-item li + li {
+  margin-top: 20px;
+}
+
+.insurances-item::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../assets/icons/check.svg");
+  position: absolute;
+  left: -21px;
+}
+
+.insurances-item .button {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .insurances {
+    grid-template-columns: 1fr;
+  }
+}

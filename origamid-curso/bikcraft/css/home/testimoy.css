@@ -18,7 +18,7 @@
 }
 
 .testimony-content blockquote {
-  color: var(--base-5);
+  color: var(--primary-5);
 }
 
 .testimony-content p {
@@ -48,7 +48,7 @@
 }
 
 .testimony-content span {
-  color: var(--base-4);
+  color: var(--primary-4);
 }
 
 @media (max-width: 800px) {
