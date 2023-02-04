@@ -7,16 +7,18 @@
 @import "utilities/colors.css";
 
 @import "home/intro.css";
-@import "home/bikes-list.css";
 @import "home/technology.css";
 @import "home/partners.css";
 @import "home/testimoy.css";
 
 @import "bikes/bikes.css";
+@import "bikes/bike.css";
+@import "bikes/bikes-list.css";
 
 @import "terms/terms.css";
 
 @import "insurances/insurances.css";
+@import "insurances/insurance.css";
 @import "insurances/benefits.css";
 @import "insurances/questions.css";
 
