@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+#insurances .insurances {
+  padding-top: 0;
+}
+
 .insurances h2 {
   grid-column: 1/-1;
   color: var(--base-0);
@@ -21,6 +25,7 @@
   padding-left: 60px;
   display: grid;
   grid-template-columns: 1fr auto;
+  border-radius: 4px;
 }
 
 .insurances-item h3 {

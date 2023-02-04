@@ -1,5 +1,6 @@
 @import "global/global.css";
 @import "global/header.css";
+@import "global/footer.css";
 
 @import "utilities/components.css";
 @import "utilities/typography.css";
@@ -10,5 +11,13 @@
 @import "home/technology.css";
 @import "home/partners.css";
 @import "home/testimoy.css";
+
+@import "bikes/bikes.css";
+
+@import "terms/terms.css";
+
+@import "insurances/insurances.css";
+@import "insurances/benefits.css";
+@import "insurances/questions.css";
 
 @import "insurances/insurances.css";

@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.dot {
+  color: var(--primary-1);
+}
+
 .button {
   display: inline-block;
   padding: 16px 32px;
@@ -28,6 +32,24 @@
 
 .button.secondary:hover {
   background: var(--base-9);
+}
+
+.button.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.button.arrow::after {
+  content: "";
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../assets/icons/arrow.svg");
+  transition: transform 0.2s;
+}
+
+.button.arrow:hover::after {
+  transform: translateX(4px);
 }
 
 @media (max-width: 600px) {
@@ -54,4 +76,29 @@
 
 .link:hover {
   color: var(--base-0);
+}
+
+.title-bg {
+  padding: 60px 0 60px;
+  background-color: var(--base-11);
+}
+
+.title h1 {
+  color: var(--base-0);
+}
+
+.title p {
+  margin-bottom: 4px;
+  color: var(--base-5);
+}
+
+@media (max-width: 800px) {
+  .title-bg {
+    padding: 40px 0 40px;
+  }
+  .title p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
 }

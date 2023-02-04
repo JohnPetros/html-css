@@ -30,7 +30,7 @@
 .intro p {
   margin-bottom: 20px;
 
-  color: var(--base-10);
+  color: var(--base-5);
 }
 
 @media (max-width: 800px) {
