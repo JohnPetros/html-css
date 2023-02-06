@@ -54,6 +54,21 @@
   transform: translateX(4px);
 }
 
+.title-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--base-11);
+}
+
+.title {
+  background: url("../../assets/decorator/top-right.svg") no-repeat top right
+    20px;
+}
+
+.title p {
+  margin-bottom: 4px;
+}
+
 @media (max-width: 600px) {
   .button {
     padding: 12px 16px;

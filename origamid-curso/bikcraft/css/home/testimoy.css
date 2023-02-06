@@ -14,6 +14,8 @@
 
 .testimony-content {
   align-self: flex-end;
+  background: url("../../assets/decorator/bottom-right.svg") no-repeat bottom
+    40px right 40px;
   padding: 40px 40px 80px 80px;
 }
 
@@ -49,6 +51,12 @@
 
 .testimony-content span {
   color: var(--primary-4);
+}
+
+@media (min-width: 1200px) {
+  .testimony img {
+    max-height: 520px;
+  }
 }
 
 @media (max-width: 800px) {

@@ -16,11 +16,15 @@
 .contact-data {
   border-radius: 5px 0 0 5px;
   background-color: var(--base-12);
+  background: var(--base-12) url("../../assets/decorator/bottom-left.svg")
+    no-repeat bottom 20px left 20px;
 }
 
 .contact-form {
   border-radius: 0 5px 5px 0;
   background-color: var(--base-0);
+  background: var(--base-0) url("../../assets/decorator/bottom-right.svg")
+    no-repeat bottom 20px right 20px;
 }
 
 .contact-data h2 {
@@ -75,6 +79,7 @@
   }
   .contact-data {
     border-radius: 5px 5px 0 0;
+    background-color: var(--base-12);
   }
   .contact-data h2,
   .contact-means a:nth-child(3) {

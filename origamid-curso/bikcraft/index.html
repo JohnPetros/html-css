@@ -15,7 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css">
     <title>Bikcraft</title>
   </head>
   <body>
@@ -45,10 +46,16 @@
           </p>
           <a class="button" href="./bikes">Escolha a sua</a>
         </div>
-        <img
+        <picture>
+          <source media="(max-width: 800px)" srcset="assets/images/nimbus.jpg">
+          <img
           src="assets/images/intro.jpg"
           alt="Imagem de introdução: Uma bicicleta elétrica preta"
+          width="1200"
+          height="1600"
         />
+        </picture>
+       
       </div>
     </main>
 
@@ -107,7 +114,7 @@
           <a class="link" href="./bikes">Escolha um modelo</a>
           <div class="technology-advantages">
             <div>
-              <img src="./assets/icons/eletric.svg" />
+              <img src="./assets/icons/eletric.svg" width="24" height="24" alt="" />
               <h3 class="font-1-m">Moto elétrico</h3>
               <p class="font-2-s">
                 Toda bikcraft é equipada com motor elétrico que possui duração
@@ -116,7 +123,7 @@
               </p>
             </div>
             <div>
-              <img src="./assets/icons/eletric.svg" />
+              <img src="./assets/icons/tracker.svg" width="24" height="24" />
               <h3 class="font-1-m">Rastreador</h3>
               <p class="font-2-s">
                 Sabemos quão preciosa é a sua bikcraft, por isso adicionamos
