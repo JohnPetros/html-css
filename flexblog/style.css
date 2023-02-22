@@ -135,6 +135,7 @@ img {
   margin: 0 10px;
 }
 
+/* Products */
 .products {
   max-width: 1200px;
   margin: 60px auto;
@@ -175,6 +176,7 @@ img {
   border-top: 8px solid #66d9eb;
 }
 
+/* Pricing */
 .pricing {
   background-color: #f7f7f7;
   padding: 60px;
@@ -210,7 +212,7 @@ img {
 }
 
 .pricing-item sup {
-  font-size: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .pricing-item ul {
@@ -227,7 +229,7 @@ img {
   margin-bottom: 15px;
 }
 
-.pricing-item li {
+.pricing-item li::after {
   content: "";
   display: block;
   width: 6px;
@@ -260,4 +262,50 @@ img {
   .pricing .pricing-item:nth-child(2) {
     order: -1;
   }
+}
+
+/* Quality */
+.quality {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quality-item {
+  flex: 1 1 300px;
+  margin: 20px 10px;
+}
+
+.quality-item h2 {
+  font-size: 2.25rem;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+}
+
+.quality-item h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 8px;
+  background-color: blue;
+}
+
+.quality-item:nth-child(3n + 1) h2::before {
+  background-color: #ae81ff;
+}
+
+.quality-item:nth-child(3n + 2) h2::before {
+  background-color: #f9265e;
+}
+
+.quality-item:nth-child(3n + 3) h2::before {
+  background-color: #66b9eb;
+}
+
+.quality-item p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #7c7c7c;
 }
