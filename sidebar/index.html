@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <img
+          class="logo-img"
+          src="https://github.com/JohnPetros.png"
+          alt="Foto do usuário"
+        />
+      </header>
+
+      <nav>
+        <button>
+          <span>
+            <i class="ph-bold ph-house"></i>
+            <span>Home</span>
+          </span>
+        </button>
+
+        <button>
+          <span>
+            <i class="ph-bold ph-hash-straight"></i>
+            <span>Explorar</span>
+          </span>
+        </button>
+
+        <button>
+          <span>
+            <i class="ph-bold ph-envelope-simple"></i>
+            <span>Mensagens</span>
+          </span>
+        </button>
+
+        <button>
+          <span>
+            <i class="ph-bold ph-user"></i>
+            <span>Profile</span>
+          </span>
+        </button>
+      </nav>
+    </aside>
+
+    <button class="button-mobile" onclick="toggleMenu()">
+      <span>
+        <i class="ph-bold ph-list"></i>
+        <span>Menu</span>
+      </span>
+    </button>
+
+    <nav id="menu-mobile" class="menu-mobile">
+      <button onclick="toggleMenu()" class="button-close">
+        <span>
+          <i class="ph-bold ph-x"></i>
+        </span>
+      </button>
+
+      <button>
+        <span>
+          <i class="ph-bold ph-house"></i>
+          <span class="mobile-text">Home</span>
+        </span>
+      </button>
+
+      <button>
+        <span>
+          <i class="ph-bold ph-hash-straight"></i>
+          <span class="mobile-text">Explorar</span>
+        </span>
+      </button>
+
+      <button>
+        <span>
+          <i class="ph-bold ph-envelope-simple"></i>
+          <span class="mobile-text">Mensagens</span>
+        </span>
+      </button>
+
+      <button>
+        <span>
+          <i class="ph-bold ph-user"></i>
+          <span class="mobile-text">Profile</span>
+        </span>
+      </button>
+    </nav>
+
+    <div class="main">
+      <h1>Bem vindos ao site</h1>
+      <span>@johnpetros</span>
+    </div>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
