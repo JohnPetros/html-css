@@ -120,7 +120,7 @@ img {
   grid-column: 1 / -1;
 }
 
-.content img:nth-child(1) {
+.content img:nth-child(4) {
   grid-row: span 2;
   align-self: end;
 }
@@ -187,6 +187,42 @@ p {
   line-height: 1;
   margin-top: 10px auto;
   padding: 5px;
+}
+
+.emphasis {
+  font-size: 0.875rem;
+  color: #8844ee;
+  max-width: 16em;
+}
+
+.cite,
+.attributes {
+  align-self: start;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 0 rgb(44, 44, 44, 0.15);
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  color: white;
+}
+
+.cite p {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+
+.attributes li {
+  color: white;
+  font-family: Courier, monospace;
+  font-size: 1.125em;
+  padding: 15px;
+}
+
+.attributes li + li {
+  border-top: 2px solid #b07dfb;
 }
 
 .label {
