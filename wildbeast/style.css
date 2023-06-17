@@ -82,16 +82,37 @@ img {
 
 .sidenav {
   grid-area: sidenav;
+  background-color: #fafbfc;
+  padding: 30px;
 }
 
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0 rgb(4, 4, 4, 0.15);
+  transition: .1s ease-out;
+}
+
+.sidenav li a:hover {
+  background-color: #b07dfb;
+}
+
+/* CONTENT */
 .content {
   grid-area: content;
 }
 
+/* ANUNCIOS */
 .ads {
   grid-area: ads;
 }
 
+/* FOOTER */
 .footer {
   grid-area: footer;
 }
