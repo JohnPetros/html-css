@@ -107,6 +107,26 @@ img {
 /* CONTENT */
 .content {
   grid-area: content;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+.content img:nth-child(1) {
+  grid-row: span 2;
+  align-self: end;
+}
+
+.content img:nth-child(2) {
+  align-self: end;
 }
 
 /* ADS */
@@ -121,7 +141,7 @@ img {
 /* FOOTER */
 .footer {
   grid-area: footer;
-  background-color: #fafbfc;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
 }
 
 .footer p {
